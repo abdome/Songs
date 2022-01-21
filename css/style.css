@@ -1,0 +1,141 @@
+* , *::after ,*::before
+{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-color: rgb(224, 232, 255);
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+.play
+{
+    width: 350px;
+    max-height: 500px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+.container
+{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.container .img2
+{
+    background-image: url('../images/illustration-hero.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.container .text
+{
+      
+}
+.pay 
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left:auto ;
+    margin-right: auto;
+    
+}
+.pay .centerize
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 249, 254);
+    padding: 3px;
+}
+
+.pay .centerize .money   
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  
+    
+}
+.pay .centerize .money #m
+{
+    background-color: rgb(223, 229, 251);
+    height: 100%;
+    border-radius: 50%;
+    padding: 5px;
+
+    
+}
+.pay .centerize span
+{
+    display: inline-flex;
+    flex-direction: column;
+}
+.pay .centerize button
+{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+.pay .centerize button:hover
+{
+    color: rgb(152, 144, 247);
+    transform: scale(1.2);
+}
+.decision
+{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.decision button
+{
+    padding: 5px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.decision #payment
+{
+    padding: 10px;
+    background: rgb(118, 108, 241);
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+}
+.decision button:hover
+{
+    transform: scale(1.05);
+    color: blue;
+}
+.play h6
+{
+    display: inline;
+    color: #003049;
+}
+@media only screen and (max-width:500px) {
+    body{
+        background-image: url('../images/pattern-background-mobile.svg');
+        
+    }
+    
+}
